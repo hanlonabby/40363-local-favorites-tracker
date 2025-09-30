@@ -1,0 +1,101 @@
+/* ==========================================
+   PROJECT 2: LOCAL FAVORITES TRACKER
+   CSS organized by sections for maintainability
+
+   Instructions: Add your styles in the marked sections below.
+   Each section shows which lab adds what code.
+   ========================================== */
+
+/* ==========================================
+   CSS RESET & BASE STYLES
+   LAB11: Add core foundation styles here
+   ========================================== */
+
+/* TODO LAB11: Add CSS reset and base styles */
+
+
+/* ==========================================
+   CONTAINER & LAYOUT
+   LAB11: Add container and layout styles here
+   ========================================== */
+
+/* TODO LAB11: Add .container styles */
+
+
+/* ==========================================
+   HEADER
+   LAB11: Add header with gradient background
+   ========================================== */
+
+/* TODO LAB11: Add header, h1, and .subtitle styles */
+
+
+/* ==========================================
+   MAIN CONTENT & SECTIONS
+   LAB11: Add section containers and spacing
+   ========================================== */
+
+/* TODO LAB11: Add main and section styles */
+
+
+/* ==========================================
+   FORM STYLES
+   LAB11: Add form layout and input styling
+   TODO LAB13: May add form validation styles
+   ========================================== */
+
+/* TODO LAB11: Add .form-group, label, input, select, textarea styles */
+
+
+/* ==========================================
+   BUTTONS
+   LAB11: Add primary button styling
+   TODO LAB14: Will add .btn-danger and .btn-secondary here
+   ========================================== */
+
+/* TODO LAB11: Add .btn and .btn-primary styles */
+
+
+/* ==========================================
+   SEARCH CONTROLS
+   LAB11: Add search input and filter layout
+   TODO LAB14: Will connect to JavaScript search functionality
+   ========================================== */
+
+/* TODO LAB11: Add .search-controls styles */
+
+
+/* ==========================================
+   FAVORITES GRID & CARDS
+   LAB11: Add grid layout structure
+   TODO LAB13: Cards will be populated by JavaScript
+   ========================================== */
+
+/* TODO LAB11: Add .favorites-grid and .empty-message styles */
+
+
+/* ==========================================
+   FAVORITE CARD STYLES
+   LAB11: Prepare card design for JavaScript
+   LAB13: JavaScript will create cards using these styles
+   ========================================== */
+
+/* TODO LAB11: Add .favorite-card and related styles */
+
+
+/* ==========================================
+   FOOTER
+   LAB11: Add simple centered footer
+   ========================================== */
+
+/* TODO LAB11: Add footer styles */
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   LAB11: Add mobile-first responsive breakpoints
+   IMPORTANT: Keep ALL media queries in this section!
+   TODO LAB13-15: May add responsive adjustments for new features
+   ========================================== */
+
+/* TODO LAB11: Add @media queries for tablet and mobile */
