@@ -3,6 +3,7 @@
 // LAB13: Functions & DOM Manipulation
 // ==========================================
 
+
 console.log('LAB13: Functions & DOM Manipulation');
 
 // Array to store all favorites
@@ -28,26 +29,28 @@ function displayFavorites() {
         return;
     }
 
-    // Loop through each favorite and create HTML
-    favorites.forEach(function(favorite) {
-        // Create the star rating display
-        let starsDisplay = '⭐'.repeat(favorite.rating);
+// Loop through each favorite and create HTML
+favorites.forEach(function(favorite, index) {
+    // Create the star rating display
+    let starsDisplay = '⭐'.repeat(favorite.rating);
 
-        // Build the HTML for this favorite card
-        const cardHTML = `
-            <div class="favorite-card">
-                <h3>${favorite.name}</h3>
-                <span class="favorite-category">${favorite.category}</span>
-                <div class="favorite-rating">${starsDisplay} (${favorite.rating}/5)</div>
-                <p class="favorite-notes">${favorite.notes}</p>
-                <p class="favorite-date">Added: ${favorite.dateAdded}</p>
+    // Build the HTML for this favorite card
+    const cardHTML = `
+        <div class="favorite-card">
+            <h3>${favorite.name}</h3>
+            <span class="favorite-category">${favorite.category}</span>
+            <div class="favorite-rating">${starsDisplay} (${favorite.rating}/5)</div>
+            <p class="favorite-notes">${favorite.notes}</p>
+            <p class="favorite-date">Added: ${favorite.dateAdded}</p>
+            <div class="favorite-actions">
+                <button class="btn btn-danger" onclick="deleteFavorite(${index})">Delete</button>
             </div>
-        `;
+        </div>
+    `;
 
-        // Add this card to the favorites list
-        favoritesList.innerHTML += cardHTML;
-    });
-
+    // Add this card to the favorites list
+    favoritesList.innerHTML += cardHTML;
+});
     console.log('Displayed', favorites.length, 'favorite(s)');
 }
 
