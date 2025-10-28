@@ -1,10 +1,10 @@
 // ==========================================
 // PROJECT 2: LOCAL FAVORITES TRACKER
-// LAB14: Delete, Searc, and Filtrer 
+// LAB14: Delete, Search, and Filter
 // ==========================================
 
 
-console.log('LAB13: Functions & DOM Manipulation');
+console.log('LAB14: Delete, Search, and Filter');
 
 // Array to store all favorites
 let favorites = [];
@@ -12,21 +12,26 @@ let favorites = [];
 // Get references to DOM elements
 const form = document.getElementById('add-favorite-form');
 const favoritesList = document.getElementById('favorites-list');
+const searchInput = document.getElementById('search-input');
+const categoryFilter = document.getElementById('category-filter');
 
 console.log('Form:', form);
-console.log('Favorites list container:', favoritesList);
+console.log('Favorites list:', favoritesList);
+console.log('Search input:', searchInput);
+console.log('Category filter:', categoryFilter);
 
-// Function to display all favorites on the page
+// Display all favorites (resets filters, then delegates to search)
 function displayFavorites() {
   console.log('Displaying favorites...');
-
   favoritesList.innerHTML = '';
 
   if (favorites.length === 0) {
-    favoritesList.innerHTML = '<p class="empty-message">No favorites yet. Add your first favorite place above!</p>';
+    favoritesList.innerHTML =
+      '<p class="empty-message">No favorites yet. Add your first favorite place above!</p>';
     return;
   }
 
+  
   // Reset filters to "show all", then render via searchFavorites()
   document.getElementById('search-input').value = '';
   document.getElementById('category-filter').value = 'all';
