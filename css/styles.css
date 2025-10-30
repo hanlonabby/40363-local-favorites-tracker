@@ -185,6 +185,14 @@ textarea {
     gap: 1.5rem;
 }
 
+.favorites-count {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
 .empty-message {
     grid-column: 1 / -1;
     text-align: center;
